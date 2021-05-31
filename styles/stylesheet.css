@@ -37,14 +37,6 @@ canvas {
 	opacity: 0;
 }
 
-.solid {
-	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-}
-
-.wireframe {
-	clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-}
-
 img {
   position: relative;
   z-index: 20;
@@ -87,7 +79,7 @@ img {
   padding: 10px;
   font-size: 1em;
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
+  font-weight: 400;
   color: white;
   border-radius: 20px;
   text-decoration: none;
@@ -113,6 +105,7 @@ img {
 
 .title1 {
   font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
   font-size: 5em;
   margin-top: 0.5vh;
   margin-bottom: 0.5vh;
@@ -122,6 +115,7 @@ img {
 
 .title2 {
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   color: #00499c;
   font-size: 4em;
   padding-top: 5%;
@@ -132,6 +126,7 @@ img {
 
 .title3 {
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   color: #00499c;
   font-size: 4em;
   margin: auto;
@@ -233,14 +228,17 @@ img {
   display: inline-block;
   z-index: 20;
   position: relative;
+  padding: 2%;
 }
 
 .card-title {
   color: black;
   height: 5vh;
+  font-weight: 600;
   margin: auto;
   position: relative;
-  padding: 5%;
+
+  padding-bottom: 4%;
   white-space: normal;
 }
 
@@ -268,13 +266,16 @@ img {
   .upcoming .li {
     height: 10vh;
     width: 25vw;
-    margin: auto;
-    margin-top: 5vh;
     background: white;
     border-radius: 20px;
-    padding: 3vh;
+    padding: 3%;
     z-index: 20;
     position: relative;
+    display: flex;
+    margin: auto;
+    margin-top: 5vh;
+    align-items:center;
+    justify-content:center;
   }
 
 .fun-stuff {
