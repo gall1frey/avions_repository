@@ -1,0 +1,15 @@
+data = `
+  {
+    "aboutUsText": "Avions is the official Aero Design Club of PESIT-BSC. The team encompasses of students with zeal to excel, who work with tremendous perseverance to think beyond the horizon and achieve the unsurpassed. The team includes students from multiple disciplines striving to achieve a common goal.",
+    "achievementsText": "Achievements text goes here. That is the brief text, not the achievements itself",
+    "achievement_cards": [
+      {"title":"SAE AERO DESIGN COMPETITION WEST, 2014, TEXAS, USA","details":"1st Place- Flight Score, Micro Class 2nd Place Overall, Micro Class 8th Place Highest Payload Fraction 9th Place Design Report 1st Indian Team to Secure 2nd Place Overall in any class in SAE since 1996"},
+      {"title":"GLIDER DESIGN COMPETITION 2016 - IIT DELHI","details":"2nd Place Overall 1st Place in Design Report"},
+      {"title":"SAE-IBS AERO-DESIGN 2017 - Tumkur","details":"1st Place Overall (Micro Class) 3rd Place in Design Report 3rd Place in Technical Presentation"},
+      {"title":"SAE-ISS AERO-DESIGN 2017 - Chennai","details":"1st Place Overall (Micro Class) 2nd Place in Design Report 3rd Place in Technical Presentation"},
+      {"title":"SAE-ISS AERO-DESIGN 2018 - Chennai","details":"4th Place Overall (Micro Class)"},
+      {"title":"Boeing AeroDesign Challenge 2019- IIT-K","details":"1st Round Qualified"},
+      {"title":"SAE-ISS AERO-DESIGN 2019 - Chennai","details":"19th Place Overall (Micro Class)"}
+    ],
+    "upcoming_list": []
+  }`;

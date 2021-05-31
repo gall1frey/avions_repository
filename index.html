@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>AVIONS</title>
+    <link rel="stylesheet" href="styles/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="content">
+      <div class="loading"></div>
+      <div id="home"></div>
+      <nav>
+          <a href="#home" class="nav-buttons"><div>Home</div></a>
+          <a href="#about" class="nav-buttons"><div>About Us</div></a>
+          <a href="#achievements" class="nav-buttons"><div>Achievements</div></a>
+          <a href="#upcoming" class="nav-buttons"><div>Upcoming</div></a>
+          <a href="#fun" class="nav-buttons"><div>Fun Stuff</div></a>
+          <a href="#contact" class="nav-buttons"><div>Contact Us</div></a>
+      </nav>
+      <div class="sect" id="home">
+        <div class="home"></div>
+        <div class="avions-logo">
+          <img src="assets/avions_logo.png" alt=""/>
+          <div class="title1 center">A V I O N S</div>
+          <p class="subtitle center">Aviation team of PESIT</p>
+        </div>
+        <div class="scroll-cta"></div>
+      </div>
+      <div class="sect"id="about">
+        <div class="about"></div>
+        <div class="about-us">
+          <div id="line"></div>
+          <div class="picture-frame">
+            <div class="about-info">
+              <div class="title2" style="padding-left: 5%">About Us.</div>
+              <div class="content1" style="padding: 3%" id="about_text"></div>
+            </div>
+            <img src="assets/team.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="sect blue" id="achievements">
+        <div class="achievements"></div>
+        <h1 class="title2 left">Achievements</h1>
+        <div class="content1 left" id="achievements-text"></div>
+        <div class="card-container blue" id="achievement_cards">
+        </div>
+      </div>
+      <div class="sect" id="upcoming">
+        <div class="title3 center">Upcoming Events</div>
+        <div class="upcoming" id="upcoming_list">
+        </div>
+      </div>
+      <div class="sect" id="fun">
+        <div class="fun-stuff">
+          <div class="title3 right">Fun Stuff</div>
+        </div>
+      </div>
+      <div class="sect" id="contact" style="height:60vh">
+        <div class="contact-us">
+          <div class="title2 left">Contact Us</div>
+          <div class="contact_box">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <hr>
+      Footer
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
+    <script src="js/three.min.js"></script>
+    <script src="js/OBJLoader.js"></script>
+    <script src="js/animation_script.js"></script>
+    <script type="text/javascript" src="data/data.json"></script>
+    <script src="js/load_data_script.js"></script>
+  </body>
+</html>
