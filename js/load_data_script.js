@@ -30,3 +30,8 @@ if (mydata.upcoming_list.length > 0){
 }
 
 document.getElementById('upcoming_list').innerHTML = text
+
+document.getElementById('contact_details').innerHTML = mydata.contact_details[0];
+
+var link = mydata.contact_details[1]
+document.getElementById('contact_button').setAttribute('onclick',"location.href='"+link+"'; target='_blank'")

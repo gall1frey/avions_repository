@@ -11,5 +11,6 @@ data = `
       {"title":"Boeing AeroDesign Challenge 2019- IIT-K","details":"1st Round Qualified"},
       {"title":"SAE-ISS AERO-DESIGN 2019 - Chennai","details":"19th Place Overall (Micro Class)"}
     ],
-    "upcoming_list": []
+    "upcoming_list": [],
+    "contact_details":["This has to be a whole text, can't be formatted.","https://www.google.com"]
   }`;
