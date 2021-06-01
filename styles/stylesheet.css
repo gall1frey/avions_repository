@@ -5,6 +5,7 @@ body, html {
   margin:0;
   padding:0;
   font-family: 'Montserrat', sans-serif;
+  max-width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -51,6 +52,7 @@ img {
   margin: auto;
   padding-top: 5%;
   color: #777;
+  max-width: 100%;
 }
 
   .sect.blue {
@@ -67,7 +69,7 @@ img {
 
 .left {
   text-align: left;
-  padding-left: 5%;
+  padding-left: 2%;
 }
 
 .center {
@@ -105,7 +107,8 @@ img {
 
 .title1 {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-weight: bolder;
+  color: black;
   font-size: 5em;
   margin-top: 0.5vh;
   margin-bottom: 0.5vh;
@@ -190,12 +193,12 @@ img {
 }
 
   .picture-frame img {
-  border-radius: 30px;
-  height: 100%;
-  width: 100%;
-  border: 1vw solid #78d6ff;
-  display:block;
-}
+    border-radius: 30px;
+    height: 100%;
+    width: 100%;
+    border: 1vw solid #78d6ff;
+    display:block;
+  }
 
   .picture-frame .about-info {
     margin: auto;
@@ -287,6 +290,7 @@ img {
 .contact-us {
   height: 70vh;
   width: 100vw;
+  max-width: 100%;
 }
 
 .contact_box {
@@ -331,8 +335,6 @@ img {
     background: #00499c;*/
     font-weight: 600;
   }
-
-
 
 footer {
   margin: auto;
@@ -387,4 +389,248 @@ footer {
 hr {
   margin: auto;
   max-width: 60vw;
+}
+
+@media screen and (max-width: 980px) {
+  .card-container {
+    margin-top: 10vh;
+  }
+  .upcoming {
+    width: 60vw;
+  }
+  .upcoming .li {
+    width: 40vw;
+  }
+  .contact_box {
+    height: 30vh;
+    width: 50vw;
+    border-radius: 30px;
+    background: #1b85fe;
+    padding-top: 2%;
+    overflow: auto;
+    margin-top: 5vh;
+    margin-left: 6vh;
+  }
+    .contact_box #contact_details {
+      color: white;
+      padding-left: 8%;
+      padding-top: 8%;
+      width: 90%;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 780px) {
+  .card-container {
+    margin-top: 10vh;
+  }
+  .upcoming {
+    width: 60vw;
+  }
+  .upcoming .li {
+    width: 40vw;
+  }
+  .contact_box {
+    height: 30vh;
+    width: 80vw;
+    border-radius: 30px;
+    background: #1b85fe;
+    padding-top: 2%;
+    overflow: auto;
+    margin-top: 5vh;
+    margin-left: 6vh;
+  }
+    .contact_box #contact_details {
+      color: white;
+      padding-left: 8%;
+      padding-top: 8%;
+      width: 90%;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      font-size: 1.5em;
+    }
+  .title1 {
+    font-size: 4em;
+  }
+  .nav-buttons {
+    margin: auto;
+    padding: 10px;
+    font-size: 1em;
+  }
+  .avions-logo {
+    margin: auto;
+    padding-top: 30%;
+    width: 70vw;
+    height: 70vh;
+    z-index: 1;
+  }
+  .picture-frame .about-info {
+    width: 80vw;
+    padding-left: 5%;
+  }
+  .picture-frame {
+    left: 4vh;
+    top: 120vh;
+    width: 90vh
+  }
+  #about_text {
+    margin-left: 3vh;
+  }
+  .about-us {
+    width: 80vw;
+  }
+  .card-container {
+    margin-top: 20vh;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .card-container {
+    margin-top: 10vh;
+  }
+  .upcoming {
+    width: 60vw;
+  }
+  .upcoming .li {
+    width: 40vw;
+  }
+  .contact_box {
+    height: 30vh;
+    width: 80vw;
+    border-radius: 30px;
+    background: #1b85fe;
+    padding-top: 2%;
+    overflow: auto;
+    margin-top: 5vh;
+    margin-left: 6vh;
+  }
+    .contact_box #contact_details {
+      color: white;
+      padding-left: 8%;
+      padding-top: 8%;
+      width: 90%;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      font-size: 1.5em;
+    }
+  .title1 {
+    font-size: 3.5em;
+  }
+  .nav-buttons {
+    margin: auto;
+    padding: 10px;
+    font-size: 0.8em;
+  }
+  .avions-logo {
+    margin: auto;
+    padding-top: 50%;
+    width: 70vw;
+    height: 70vh;
+    z-index: 1;
+  }
+  .picture-frame .about-info {
+    width: 80vw;
+    padding-left: 5%;
+  }
+  .picture-frame {
+    left: 3vh;
+    top: 120vh;
+    width: 60vh
+  }
+  #about_text {
+    margin-left: 3vh;
+  }
+  .about-us {
+    width: 80vw;
+  }
+  .card-container {
+    margin-top: 20vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .picture-frame .about-info {
+    width: 80vw;
+  }
+  .about-us {
+    width: 80vw;
+  }
+  .card-container {
+    margin-top: 10vh;
+  }
+  .upcoming {
+    width: 60vw;
+    height: 50vh;
+  }
+  .upcoming .li {
+    width: 45vw;
+  }
+  .contact_box {
+    height: 30vh;
+    width: 80vw;
+    border-radius: 30px;
+    background: #1b85fe;
+    padding-top: 2%;
+    overflow: auto;
+    margin-top: 5vh;
+    margin-left: 6vh;
+  }
+    .contact_box #contact_details {
+      color: white;
+      padding-left: 8%;
+      padding-top: 8%;
+      width: 90%;
+      height: 50%;
+      display: flex;
+      justify-content: center;
+      font-size: 1em;
+    }
+  .title1 {
+    font-size: 3em;
+  }
+  .title2 {
+    font-size: 3em;
+  }
+  .title3 {
+    font-size: 3em;
+  }
+  .nav-buttons {
+    margin: auto;
+    padding: 10px;
+    font-size: 0.6em;
+  }
+  .avions-logo {
+    margin: auto;
+    padding-top: 80%;
+    width: 70vw;
+    height: 70vh;
+    z-index: 1;
+  }
+  .picture-frame .about-info {
+    width: 60vw;
+  }
+  .picture-frame {
+    left: 2vh;
+    top: 117vh;
+    width: 45vh;
+  }
+  .picture-frame img {
+    height: 80%;
+  }
+  #about_text {
+    margin-left: 1vh;
+    width: 110%;
+    /*text-align: justify;*/
+  }
+  .about-us {
+    width: 80vw;
+  }
+  .card-container {
+    margin-top: 20vh;
+  }
 }
