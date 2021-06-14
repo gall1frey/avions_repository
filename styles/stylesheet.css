@@ -281,10 +281,54 @@ img {
     justify-content:center;
   }
 
-.fun-stuff {
-  height: 85vh;
+.team {
+  /*height: 200vh;*/
   width: 100vw;
   margin: auto;
+}
+
+.team-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  margin: auto;
+  margin-top: 8vh;
+
+}
+
+.team-card-content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.team-card-li {
+  display: flex;
+  padding: 1rem;
+  @media(min-width: 40rem) {
+    width: 50%;
+  }
+  @media(min-width: 56rem) {
+    width: 33.3333%;
+  }
+}
+
+.team-card {
+  height: 30vh;
+  min-width: 300px;
+  width: 20vw;
+  background: #1b85fe;
+  border-radius: 2vh;
+  margin: auto;
+  margin-left: 3vh;
+  display: inline-block;
+  z-index: 20;
+  position: relative;
+  padding: 2%;
 }
 
 .contact-us {
