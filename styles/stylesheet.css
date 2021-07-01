@@ -324,17 +324,12 @@ img {
   }
 }
 
-/*.team-card-li:nth-child(odd) {
-  margin-left: 20%;
-}*/
-
 .team-card {
   background-color: transparent;
   height: 30vh;
   width: 280px;
   min-height: 100px;
   min-width: 180px;
-  /*border: 1px solid #f1f1f1;*/
   perspective: 1000px;
   margin: auto;
   margin-left: 0;
