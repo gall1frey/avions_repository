@@ -328,8 +328,7 @@ img {
   background-color: transparent;
   height: 30vh;
   width: 280px;
-  min-height: 100px;
-  min-width: 180px;
+  min-width: 280px;
   perspective: 1000px;
   margin: auto;
   margin-left: 0;
