@@ -11,6 +11,63 @@ data = `
       {"title":"Boeing AeroDesign Challenge 2019- IIT-K","details":"1st Round Qualified"},
       {"title":"SAE-ISS AERO-DESIGN 2019 - Chennai","details":"19th Place Overall (Micro Class)"}
     ],
-    "upcoming_list": [],
-    "contact_details":["This has to be a whole text, can't be formatted.","https://www.google.com"]
+    "upcoming_list": ["HELLO","HRSGSD","gfsgsd","fsgsgfs","fgsfg"],
+    "contact_details":["This has to be a whole text, can't be formatted.","https://www.google.com"],
+    "team":[{
+        "name":"Person1",
+        "position":"Captain",
+        "Linkedin":"Linkedin",
+        "Instagram":"Instagram",
+        "Web":"Web",
+        "tagline":"caption"
+      },{
+        "name":"Person1",
+        "position":"Captain",
+        "Linkedin":"Linkedin",
+        "Instagram":"Instagram",
+        "Web":"Web",
+        "tagline":"caption"
+      },{
+        "name":"Person1",
+        "position":"Captain",
+        "Linkedin":"Linkedin",
+        "Instagram":"Instagram",
+        "Web":"Web",
+        "tagline":"caption"
+      },{
+        "name":"Person1",
+        "position":"Captain",
+        "Linkedin":"Linkedin",
+        "Instagram":"Instagram",
+        "Web":"Web",
+        "tagline":"caption"
+      },{
+        "name":"Person1",
+        "position":"Captain",
+        "Linkedin":"Linkedin",
+        "Instagram":"Instagram",
+        "Web":"Web",
+        "tagline":"caption"
+      },{
+        "name":"Person1",
+        "position":"Captain",
+        "Linkedin":"Linkedin",
+        "Instagram":"Instagram",
+        "Web":"Web",
+        "tagline":"caption"
+      },{
+        "name":"Person1",
+        "position":"Captain",
+        "Linkedin":"Linkedin",
+        "Instagram":"Instagram",
+        "Web":"Web",
+        "tagline":"caption"
+      },{
+        "name":"Person1",
+        "position":"Captain",
+        "Linkedin":"Linkedin",
+        "Instagram":"Instagram",
+        "Web":"Web",
+        "tagline":"caption"
+      }]
   }`;

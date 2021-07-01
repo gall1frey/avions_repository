@@ -35,3 +35,29 @@ document.getElementById('contact_details').innerHTML = mydata.contact_details[0]
 
 var link = mydata.contact_details[1]
 document.getElementById('contact_button').setAttribute('onclick',"location.href='"+link+"'; target='_blank'")
+
+var team_members = mydata.team;
+text = ``;
+if (team_members.length > 0){
+  for(var i = 0; i < team_members.length; i++){
+    if(i%5 == 0 || i%5 == 2){
+      text += `<li class="team-card-li">`
+    }
+    text += `<div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <div class="photo-circle"></div>
+                    <div class="team-member-name">`+team_members[i].name+`</div>
+                    <div class="team-member-info">`+team_members[i].position+`</div>
+                  </div>
+                  <div class="team-card-back">
+                    <div class="team-member-info">`+team_members[i].tagline+`</div>
+                  </div>
+                </div>
+              </div>`
+    if(i%5 == 1 || i%5 == 4){
+      text += `</li>`
+    }
+  }
+}
+document.getElementById('team_list').innerHTML = text;
