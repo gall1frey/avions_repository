@@ -12,6 +12,15 @@ body, html {
     display: none;
 }
 
+/** {
+   outline: 1px solid red;
+  }
+*/
+.ico {
+  color: white;
+  display: none;
+}
+
 nav {
   width: 90vw;
   height: 7vh;
@@ -127,8 +136,9 @@ img {
   font-weight: bold;
   color: #00499c;
   font-size: 4em;
-  padding-top: 5%;
+  padding-top: 3%;
   margin: auto;
+  margin-right: 20px;
   z-index: 20;
   position: relative;
 }
@@ -184,8 +194,8 @@ img {
 }
 
 .about-us {
-    height: 85vh;
-    width: 35vw;
+    height: 75vh;
+    width: 30vw;
     margin: auto;
     border-radius: 30px;
     background: #1b85fe;
@@ -202,13 +212,17 @@ img {
     overflow: visible;
   }
 
+  .about-us .content1 {
+    font-size: 1em;
+  }
+
 .picture-frame {
-  height: 45vh;
-  width: 50vw;
+  height: 35vh;
+  width: 35vw;
   border-radius: 30px;
   position: absolute;
-  top: 130vh;
-  left: 25vw;
+  top: 132vh;
+  left: 31.5vw;
 }
 
   .picture-frame img {
@@ -225,6 +239,31 @@ img {
     padding-right: 15%;
     padding-top: 3%;
   }
+
+.scroll-prompt {
+  font-size: 1em;
+  text-align: center;
+  line-height: 50px;
+  width: 100px;
+  height: 50px;
+  border-radius: 35px;
+  display: none;
+}
+.prompt-side {
+  margin-top: 1%;
+  margin-left: 70%;
+  opacity: 0.9;
+  background-color: #78d6ff;
+  color: #777;
+}
+.prompt-down {
+  margin-top: -3%;
+  margin-left: 50%;
+  opacity: 0.9;
+  background-color: #78d6ff;
+  color: #777;
+  z-index: 22;
+}
 
 .card-container {
   display: flex;
@@ -291,7 +330,7 @@ img {
     background: white;
     border-radius: 20px;
     padding: 3%;
-    z-index: 20;
+    z-index: 0;
     position: relative;
     display: flex;
     margin: auto;
@@ -316,12 +355,6 @@ img {
   justify-content: center;
   padding: 1rem;
   perspective: 1000px;
-  @media(min-width: 40rem) {
-    width: 50%;
-  }
-  @media(min-width: 56rem) {
-    width: 33.3333%;
-  }
 }
 
 .team-card {
@@ -412,6 +445,7 @@ img {
     padding-top: 5%;
     width: 50%;
     height: 50%;
+    font-size: 1.5em;
   }
 
   .contact_box .contact_button {
@@ -493,15 +527,16 @@ hr {
   max-width: 60vw;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1470px) {
+  .upcoming {
+    width: 35vw;
+    margin-top: 2vh;
+  }
   .card-container {
     margin-top: 10vh;
   }
-  .upcoming {
-    width: 60vw;
-  }
   .upcoming .li {
-    width: 40vw;
+    width: 25vw;
   }
   .contact_box {
     height: 30vh;
@@ -523,237 +558,335 @@ hr {
       justify-content: center;
       font-size: 1.5em;
     }
-}
-
-@media screen and (max-width: 780px) {
-  .card-container {
-    margin-top: 10vh;
-  }
-  .upcoming {
-    width: 60vw;
-  }
-  .upcoming .li {
-    width: 40vw;
-  }
-  .contact_box {
-    height: 30vh;
-    width: 80vw;
-    border-radius: 30px;
-    background: #1b85fe;
-    padding-top: 2%;
-    overflow: auto;
-    margin-top: 5vh;
-    margin-left: 6vh;
-  }
-    .contact_box #contact_details {
-      color: white;
-      padding-left: 8%;
-      padding-top: 8%;
-      width: 90%;
-      height: 50%;
-      display: flex;
-      justify-content: center;
-      font-size: 1.5em;
-    }
-  .title1 {
-    font-size: 4em;
-  }
-  .nav-buttons {
-    margin: auto;
-    padding: 10px;
-    font-size: 1em;
-  }
-  .avions-logo {
-    margin: auto;
-    padding-top: 30%;
-    width: 70vw;
-    height: 70vh;
-    z-index: 1;
-  }
-  .picture-frame .about-info {
-    width: 80vw;
-    padding-left: 5%;
-  }
-  .picture-frame {
-    left: 4vh;
-    top: 120vh;
-    width: 90vh
-  }
-  #about_text {
-    margin-left: 3vh;
-  }
-  .about-us {
-    width: 80vw;
-  }
-  .card-container {
-    margin-top: 20vh;
-  }
-  .title4 {
-      font-size: 4em;
-      width: 100vw;
-      height: auto;
-      text-align: right;
-  }
   .team-sect {
     display: block;
+  }
+  .title4 {
+    width: auto;
+    font-size: 6em;
+    z-index: 20;
+    position: relative;
+    text-align: center;
+    height: auto;
   }
   .team-card-container {
-    width: 100vw;
+    height: 80vh;
+    width: 100%;
+    margin-top: 2%;
+    padding-left: 0;
+  }
+  .title2 {
+    padding-top: 0%;
+  }
+  .contact_box {
+    height: 28vh;
+    width: 40vw;
+  }
+  .contact_box .contact_button {
+    margin-bottom: 4vh;
+  }
+  .contact_box #contact_details {
+    color: white;
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 70%;
+    height: 50%;
+    font-size: 1.4em;
+  }
+  .about-us {
+      background: white;
+      margin: inherit;
+      width: auto;
+  }
+  .about-us #line {
+    display: none;
+  }
+  .about-us .content1 {
+    font-size: 1.1em;
+    margin: auto;
+    line-height: 1.6;
+  }
+  .picture-frame {
+    height: 60vh;
+    width: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    margin: auto;
+  }
+    .picture-frame img {
+      border-radius: 30px;
+      height: 45vh;
+      width: 80vh;
+      border: 1vw solid #78d6ff;
+      margin: auto;
+    }
+    .picture-frame .about-info {
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top: 3%;
+    background: #1b85fe;
+    border-radius: 35px;
+    margin: auto;
+    width: 30vw;
+    height: 50vh;
+  }
+  .credits {
+    line-height: 10vh;
   }
 }
 
-@media screen and (max-width: 680px) {
-  .card-container {
-    margin-top: 10vh;
-  }
+@media screen and (max-width: 1215px) {
   .upcoming {
-    width: 60vw;
-  }
-  .upcoming .li {
     width: 40vw;
   }
-  .contact_box {
-    height: 30vh;
-    width: 80vw;
-    border-radius: 30px;
-    background: #1b85fe;
-    padding-top: 2%;
-    overflow: auto;
-    margin-top: 5vh;
-    margin-left: 6vh;
-  }
-    .contact_box #contact_details {
-      color: white;
-      padding-left: 8%;
-      padding-top: 8%;
-      width: 90%;
-      height: 50%;
-      display: flex;
-      justify-content: center;
-      font-size: 1.5em;
-    }
-  .title1 {
-    font-size: 3.5em;
-  }
-  .nav-buttons {
-    margin: auto;
-    padding: 10px;
-    font-size: 0.8em;
-  }
-  .avions-logo {
-    margin: auto;
-    padding-top: 50%;
-    width: 70vw;
-    height: 70vh;
-    z-index: 1;
-  }
-  .picture-frame .about-info {
-    width: 80vw;
-    padding-left: 5%;
-  }
-  .picture-frame {
-    left: 3vh;
-    top: 120vh;
-    width: 60vh
-  }
-  #about_text {
-    margin-left: 3vh;
+  .upcoming .li {
+    width: 30vw;
   }
   .about-us {
+    background: white;
+    margin: inherit;
+    width: auto;
+  }
+    .about-us .content1 {
+      font-size: 1em;
+      margin: auto;
+      line-height: 1.6;
+    }
+  .picture-frame .about-info .title2 {
+    font-size: 3.5em;
+  }
+  .contact_box #contact_details {
+    color: white;
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 70%;
+    height: 50%;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 1070px) {
+  .upcoming {
+    width: 45vw;
+  }
+  .upcoming .li {
+    width: 35vw;
+  }
+  .about-us {
+    background: white;
+    margin: inherit;
+    width: auto;
+  }
+    .about-us .content1 {
+      font-size: 1em;
+      margin: auto;
+      line-height: 1.6;
+    }
+  .picture-frame .about-info .title2 {
+    font-size: 3em;
+  }
+  .contact_box {
+    height: 28vh;
+    width: 50vw;
+  }
+  .contact_box .contact_button {
+    margin-bottom: 4vh;
+    font-size: 120%;
+  }
+  .contact_box #contact_details {
+    color: white;
+    padding-left: 5%;
+    padding-top: 5%;
+    width: 70%;
+    height: 50%;
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (max-width: 939px) {
+  .upcoming {
+    min-width: 60%;
+    width: 50vw;
+  }
+  .upcoming .li {
+    min-width: 80%;
+    width: 40vw;
+  }
+  .about-us {
+      background: white;
+      margin: inherit;
+      width: auto;
+  }
+  .picture-frame .about-info .title2 {
+    font-size: 2em;
+  }
+  .about-us .content1 {
+    font-size: 1.05em;
+    line-height: 1.2;
+  }
+  .picture-frame {
+    flex-direction: column;
+  }
+    .picture-frame img {
+      width: 70vh;
+      height: calc(70vh / 16 * 9);
+    }
+    .picture-frame .about-info {
+      margin-bottom: 30px;
+      width: 80%;
+      height: 25vh;
+    }
+  .contact_box {
+    height: 25vh;
     width: 80vw;
   }
-  .card-container {
-    margin-top: 20vh;
+  .contact_box .contact_button {
+    margin-bottom: 0;
+  }
+  .contact_box #contact_details {
+    width: 90%;
+  }
+  .nav-buttons {
+    font-size: 0.9em;
+  }
+  .title1 {
+    font-size: 4.5em;
   }
   .title4 {
     font-size: 4em;
-    width: 100vw;
-    height: auto;
-    text-align: right;
   }
-  .team-sect {
-    display: block;
+  .avions-logo {
+    padding-top: 20%;
+  }
+  .team-card {
+    width: 260px;
+    min-width: 260px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
   }
 }
 
-@media screen and (max-width: 480px) {
-  .picture-frame .about-info {
-    width: 80vw;
+@media screen and (max-width: 590px) {
+  .txt {
+    display: none;
   }
-  .about-us {
-    width: 80vw;
-  }
-  .card-container {
-    margin-top: 10vh;
+  .ico {
+    display: block;
   }
   .upcoming {
-    width: 60vw;
-    height: 50vh;
+    min-width: 80%;
   }
   .upcoming .li {
-    width: 45vw;
+    min-width: 80%;
   }
-  .contact_box {
-    height: 30vh;
-    width: 80vw;
-    border-radius: 30px;
-    background: #1b85fe;
-    padding-top: 2%;
-    overflow: auto;
-    margin-top: 5vh;
-    margin-left: 6vh;
+  .picture-frame .about-info .title2 {
+    font-size: 2em;
   }
-    .contact_box #contact_details {
-      color: white;
-      padding-left: 8%;
-      padding-top: 8%;
-      width: 90%;
-      height: 50%;
-      display: flex;
-      justify-content: center;
-      font-size: 1em;
+  .about-us .content1 {
+    font-size: 1em;
+    line-height: 1.1;
+  }
+  .picture-frame {
+    flex-direction: column;
+  }
+    .picture-frame img {
+      width: 65vh;
+      height: calc(65vh / 16 * 9);
     }
-  .title1 {
-    font-size: 3em;
-  }
-  .title2 {
-    font-size: 3em;
-  }
   .title3 {
     font-size: 3em;
   }
-  .nav-buttons {
-    margin: auto;
-    padding: 10px;
-    font-size: 0.6em;
+  .title1 {
+    font-size: 3.5em;
+  }
+  .title4 {
+    font-size: 3em;
   }
   .avions-logo {
-    margin: auto;
-    padding-top: 80%;
-    width: 70vw;
-    height: 70vh;
-    z-index: 1;
-  }
-  .picture-frame .about-info {
-    width: 60vw;
-  }
-  .picture-frame {
-    left: 2vh;
-    top: 117vh;
-    width: 45vh;
-  }
-  .picture-frame img {
-    height: 80%;
-  }
-  #about_text {
-    margin-left: 1vh;
-    width: 110%;
-    /*text-align: justify;*/
+    padding-top: 45%;
   }
   .about-us {
-    width: 80vw;
+    padding-top: 20%;
   }
-  .card-container {
-    margin-top: 20vh;
+  .achievements {
+    padding-top: 20%;
+  }
+  #upcoming {
+    padding-top: 20%;
+  }
+  #team {
+    padding-top: 20%;
+  }
+  #contact {
+    padding-top: 40%;
+  }
+  .team-card {
+    min-width: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .upcoming {
+    min-width: 80%;
+    max-height: 70%;
+  }
+  .picture-frame .about-info {
+    width: 100%;
+  }
+  .picture-frame .about-info .title2 {
+    font-size: 2em;
+  }
+  .about-us .content1 {
+    font-size: 0.8em;
+    line-height: 1.1;
+  }
+  .picture-frame {
+    flex-direction: column;
+    width: 90%;
+  }
+    .picture-frame img {
+      width: 65vh;
+      height: calc(65vh / 16 * 9);
+    }
+  .title3 {
+    font-size: 2.5em;
+  }
+  .title2 {
+    font-size: 2.5em;
+  }
+  .title1 {
+    font-size: 3em;
+  }
+  .title4 {
+    font-size: 3em;
+  }
+  .avions-logo {
+    padding-top: 60%;
+  }
+  .about-us {
+    padding-top: 20%;
+  }
+  .achievements {
+    padding-top: 20%;
+  }
+  #upcoming {
+    padding-top: 15%;
+  }
+  #team {
+    padding-top: 20%;
+  }
+  #contact {
+    padding-top: 40%;
+  }
+  .scroll-prompt {
+    display: block;
+  }
+  .team-card-inner .photo-circle {  
+    height: 80px;
+    width: 80px;
   }
 }

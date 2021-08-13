@@ -7,18 +7,25 @@
     <link rel="stylesheet" href="styles/stylesheet.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
   </head>
   <body>
     <div class="content">
       <div class="loading"></div>
       <div id="home"></div>
       <nav>
-          <a href="#home" class="nav-buttons"><div>Home</div></a>
-          <a href="#about" class="nav-buttons"><div>About Us</div></a>
-          <a href="#achievements" class="nav-buttons"><div>Achievements</div></a>
-          <a href="#upcoming" class="nav-buttons"><div>Upcoming</div></a>
-          <a href="#team" class="nav-buttons"><div>Team</div></a>
-          <a href="#contact" class="nav-buttons"><div>Contact Us</div></a>
+          <a href="#home" class="nav-buttons txt"><div>Home</div></a>
+          <a href="#home" class="nav-buttons ico"><div><span class="material-icons-round">home</span></div></a>
+          <a href="#about" class="nav-buttons txt"><div>About Us</div></a>
+          <a href="#about" class="nav-buttons ico"><div><span class="material-icons-round">info</span></div></a>
+          <a href="#achievements" class="nav-buttons txt"><div>Achievements</div></a>
+          <a href="#achievements" class="nav-buttons ico"><div><span class="material-icons-round">emoji_events</span></div></a>
+          <a href="#upcoming" class="nav-buttons txt"><div>Upcoming</div></a>
+          <a href="#upcoming" class="nav-buttons ico"><div><span class="material-icons-round">event</span></div></a>
+          <a href="#team" class="nav-buttons txt"><div>Team</div></a>
+          <a href="#team" class="nav-buttons ico"><div><span class="material-icons-round">groups</span></div></a>
+          <a href="#contact" class="nav-buttons txt"><div>Contact Us</div></a>
+          <a href="#contact" class="nav-buttons ico"><div><span class="material-icons-round">call</span></div></a>
       </nav>
       <div class="sect" id="home">
         <div class="home"></div>
@@ -30,13 +37,12 @@
         <div class="scroll-cta"></div>
       </div>
       <div class="sect"id="about">
-        <div class="about"></div>
         <div class="about-us">
           <div id="line"></div>
           <div class="picture-frame">
             <div class="about-info">
               <div class="title2" style="padding-left: 5%">About Us.</div>
-              <div class="content1" style="padding: 3%" id="about_text"></div>
+              <div class="content1" style="padding: 2%" id="about_text"></div>
             </div>
             <img src="assets/team.jpg" alt="">
           </div>
@@ -46,13 +52,14 @@
         <div class="achievements"></div>
         <h1 class="title2 left">Achievements</h1>
         <div class="content1 left" id="achievements-text"></div>
-        <div class="card-container blue" id="achievement_cards">
-        </div>
+        <div class="card-container blue" id="achievement_cards"></div>
+        <div class="scroll-prompt prompt-side">Scroll &rarr;</div>
       </div>
       <div class="sect" id="upcoming">
         <div class="title3 center">Upcoming Events</div>
         <div class="upcoming" id="upcoming_list">
         </div>
+        <div class="scroll-prompt prompt-down">Scroll &darr;</div>
       </div>
       <div class="sect team-sect" id="team">
         <div class="title4">Meet the Team</div>
@@ -285,5 +292,10 @@
     <script src="js/animation_script.js"></script>
     <script type="text/javascript" src="data/data.json"></script>
     <script src="js/load_data_script.js"></script>
+    <script type="text/javascript">
+      window.addEventListener("resize", function(){
+        console.log(window.innerWidth);
+      });
+    </script>
   </body>
 </html>
