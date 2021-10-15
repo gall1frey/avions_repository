@@ -24,11 +24,10 @@ body, html {
 nav {
   width: 90vw;
   height: 7vh;
-  position: sticky;
+  position: fixed;
   top:0;
   left: 5vw;
   margin: auto;
-  padding: auto;
   background: #1b85fe;
   border-bottom-left-radius:30px;
   border-bottom-right-radius:30px;
@@ -184,9 +183,7 @@ img {
     text-align: left;
     padding-right: 20%;
   }
-  .content1.bottom {
-    padding-bottom: 20%;
-  }
+
 .subtitle {
   font-family: 'Montserrat', sans-serif;
   color: #c0c1c6;
@@ -226,7 +223,6 @@ img {
   position: absolute;
   top: 132vh;
   left: 31.5vw;
-  padding-bottom: 10px;
 }
 
   .picture-frame img {
@@ -344,7 +340,6 @@ img {
   }
 
 .team-card-container {
-  display: flex;
   height: 80vh;
   width: 70vw;
   overflow: auto;
@@ -492,7 +487,7 @@ footer {
   position: relative;
   z-index: 20;
   height: 40vh;
-  margin:auto;
+  margin: auto;
 }
 
 .credits {
@@ -775,8 +770,7 @@ hr {
   }
 }
 
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 590px) {
   .txt {
     display: none;
   }
@@ -805,8 +799,6 @@ hr {
     }
   .title3 {
     font-size: 3em;
-    margin-top: 20px;
-    margin-bottom: 20px;
   }
   .title1 {
     font-size: 3.5em;
@@ -824,39 +816,16 @@ hr {
     padding-top: 20%;
   }
   #upcoming {
-    margin-top: 20px;
     padding-top: 20%;
   }
   #team {
     padding-top: 20%;
   }
-  .team-card {
-    min-width: 10%;
-  }
-  .team-card-inner {
-    width: 100%;
-    height: 100%;
-    background: #eaeaea;
-    border-radius: 1vh;
-    z-index: 20;
-    position: relative;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  .team-card-container{
-    flex-direction: row;
-    flex-wrap: nowrap;
-  }
   #contact {
     padding-top: 40%;
   }
-  .contact_box{
-    margin: auto;
-    margin-top: 10px;
-  }
-  .footer-stuff{
-    padding-top: 20px;
-    padding-right: 10px;
+  .team-card {
+    min-width: 0;
   }
 }
 
@@ -890,7 +859,7 @@ hr {
     font-size: 2.5em;
   }
   .title1 {
-    font-size: 2.5em;
+    font-size: 3em;
   }
   .title4 {
     font-size: 3em;
@@ -905,8 +874,7 @@ hr {
     padding-top: 20%;
   }
   #upcoming {
-    padding-top: 20px;
-    margin: auto;
+    padding-top: 15%;
   }
   #team {
     padding-top: 20%;
@@ -915,7 +883,6 @@ hr {
     padding-top: 40%;
   }
   .scroll-prompt {
-    margin-top: 20px;
     display: block;
   }
   .team-card-inner .photo-circle {  
