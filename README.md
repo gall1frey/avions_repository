@@ -1,4 +1,4 @@
-# We're AVIONS
+# We're AVIONS (First 5 PR's on the entire repository during the boost period will be deemed valid)
 Avions is the official Aero-Design club of PESU EC Campus. Established nearly 9 years agom the club roots its scope in a conjunction of the Mechanical and Electronics Departments.
 
 ## What we do
