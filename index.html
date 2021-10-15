@@ -26,6 +26,10 @@
           <a href="#team" class="nav-buttons ico"><div><span class="material-icons-round">groups</span></div></a>
           <a href="#contact" class="nav-buttons txt"><div>Contact Us</div></a>
           <a href="#contact" class="nav-buttons ico"><div><span class="material-icons-round">call</span></div></a>
+          <a href="#gallery" class="nav-buttons txt"><div>Gallery</div></a>
+          <a href="#gallery" class="nav-buttons ico"><div><span class="material-icons-round">images</span></div></a>
+          
+          
       </nav>
       <div class="sect" id="home">
         <div class="home"></div>
@@ -258,6 +262,16 @@
             </li>
         </ul>
       </div>
+      <div class="title5" id="gallery">Gallery</div>
+      <div class="gallery" id="gal" >
+        <img src="https://images.financialexpress.com/2020/08/Air-India-Reuters.jpg">
+        <img src="https://assets.newatlas.com/dims4/default/aa8e386/2147483647/strip/true/crop/3000x2397+0+0/resize/1202x960!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2F17%2F4a%2F2bd169504e56aab9ce576281daa5%2Fhigh-res-1t9a6324.jpg">
+        <div id="im"></div>
+        <button id="btn" onclick="imageadd()">Add an Image</button>
+      </div>
+
+
+
       <div class="sect" id="contact" style="height:60vh">
         <div class="contact-us">
           <div class="title2 left">Contact Us</div>
@@ -296,6 +310,13 @@
       window.addEventListener("resize", function(){
         console.log(window.innerWidth);
       });
+      
+      
+      function imageadd() {
+          var img = document.createElement('img');
+          img.src ='https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/screen-shot-2021-04-14-at-11-19-15-am-1618424393.png?crop=1.00xw:1.00xh;0,0&resize=640:*';
+          document.getElementById('im').appendChild(img);
+      }
     </script>
   </body>
 </html>

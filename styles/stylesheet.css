@@ -1,15 +1,16 @@
-body, html {
+body,
+html {
   scroll-behavior: smooth;
-  -ms-overflow-style: none;  /* IE and Edge */
+  -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none;
-  margin:0;
-  padding:0;
-  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
   max-width: 100%;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 /** {
@@ -25,33 +26,40 @@ nav {
   width: 90vw;
   height: 7vh;
   position: fixed;
-  top:0;
+  top: 0;
   left: 5vw;
   margin: auto;
   background: #1b85fe;
-  border-bottom-left-radius:30px;
-  border-bottom-right-radius:30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   z-index: 21;
 }
+#btn {
+  padding: 30px;
+  background-color: #1b85fe;
+  font-size: 17px;
+  color: white;
+  border-radius: 5px;
+}
 
 canvas {
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 0;
-	pointer-events: none;
-	visibility: hidden;
-	opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
 }
 
 img {
   position: relative;
   z-index: 20;
-  max-width:100%;
-  max-height:100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .sect {
@@ -64,17 +72,17 @@ img {
   max-width: 100%;
 }
 
-  .sect.blue {
-    background: #1b85fe;
-    color: #ffffff;
-    height: 100vh;
-  }
+.sect.blue {
+  background: #1b85fe;
+  color: #ffffff;
+  height: 100vh;
+}
 
-  .team-sect {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
+.team-sect {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
 
 .right {
   text-align: right;
@@ -95,16 +103,16 @@ img {
   margin: auto;
   padding: 10px;
   font-size: 1em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: white;
   border-radius: 20px;
   text-decoration: none;
 }
-  .nav-buttons:hover{
-    background: white;
-    color: #1b85fe;
-  }
+.nav-buttons:hover {
+  background: white;
+  color: #1b85fe;
+}
 
 .avions-logo {
   margin: auto;
@@ -113,15 +121,15 @@ img {
   height: 70vh;
   z-index: 1;
 }
-  .avions-logo img {
-    max-width: 30%;
-    max-height: 30%;
-    display:block;
-    margin:auto;
-  }
+.avions-logo img {
+  max-width: 30%;
+  max-height: 30%;
+  display: block;
+  margin: auto;
+}
 
 .title1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bolder;
   color: black;
   font-size: 5em;
@@ -132,7 +140,7 @@ img {
 }
 
 .title2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #00499c;
   font-size: 4em;
@@ -144,7 +152,7 @@ img {
 }
 
 .title3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #00499c;
   font-size: 4em;
@@ -153,8 +161,9 @@ img {
   position: relative;
 }
 
-.title4 {
-  font-family: 'Montserrat', sans-serif;
+.title4,
+.title5 {
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: #00499c;
   font-size: 9em;
@@ -168,24 +177,24 @@ img {
 
 .content1 {
   padding: 5%;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: white;
   font-size: 1.1em;
   margin: auto;
   z-index: 20;
   position: relative;
 }
-  .content1.right {
-    text-align: right;
-    padding-left: 20%;
-  }
-  .content1.left {
-    text-align: left;
-    padding-right: 20%;
-  }
+.content1.right {
+  text-align: right;
+  padding-left: 20%;
+}
+.content1.left {
+  text-align: left;
+  padding-right: 20%;
+}
 
 .subtitle {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #c0c1c6;
   text-align: center;
   margin-top: 0;
@@ -194,27 +203,27 @@ img {
 }
 
 .about-us {
-    height: 75vh;
-    width: 30vw;
-    margin: auto;
-    border-radius: 30px;
-    background: #1b85fe;
-    padding-top: 2%;
-    overflow: auto;
+  height: 75vh;
+  width: 30vw;
+  margin: auto;
+  border-radius: 30px;
+  background: #1b85fe;
+  padding-top: 2%;
+  overflow: auto;
 }
 
-  .about-us #line {
-    margin: auto;
-    background: white;
-    height: 0.7vh;
-    border-radius: 5px;
-    width: 6vw;
-    overflow: visible;
-  }
+.about-us #line {
+  margin: auto;
+  background: white;
+  height: 0.7vh;
+  border-radius: 5px;
+  width: 6vw;
+  overflow: visible;
+}
 
-  .about-us .content1 {
-    font-size: 1em;
-  }
+.about-us .content1 {
+  font-size: 1em;
+}
 
 .picture-frame {
   height: 35vh;
@@ -225,20 +234,20 @@ img {
   left: 31.5vw;
 }
 
-  .picture-frame img {
-    border-radius: 30px;
-    height: 100%;
-    width: 100%;
-    border: 1vw solid #78d6ff;
-    display:block;
-  }
+.picture-frame img {
+  border-radius: 30px;
+  height: 100%;
+  width: 100%;
+  border: 1vw solid #78d6ff;
+  display: block;
+}
 
-  .picture-frame .about-info {
-    margin: auto;
-    padding-left: 15%;
-    padding-right: 15%;
-    padding-top: 3%;
-  }
+.picture-frame .about-info {
+  margin: auto;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 3%;
+}
 
 .scroll-prompt {
   font-size: 1em;
@@ -324,20 +333,20 @@ img {
   overflow: auto;
 }
 
-  .upcoming .li {
-    height: 10vh;
-    width: 25vw;
-    background: white;
-    border-radius: 20px;
-    padding: 3%;
-    z-index: 0;
-    position: relative;
-    display: flex;
-    margin: auto;
-    margin-top: 5vh;
-    align-items:center;
-    justify-content:center;
-  }
+.upcoming .li {
+  height: 10vh;
+  width: 25vw;
+  background: white;
+  border-radius: 20px;
+  padding: 3%;
+  z-index: 0;
+  position: relative;
+  display: flex;
+  margin: auto;
+  margin-top: 5vh;
+  align-items: center;
+  justify-content: center;
+}
 
 .team-card-container {
   height: 80vh;
@@ -380,39 +389,40 @@ img {
   transform-style: preserve-3d;
 }
 
-  .team-card-inner .photo-circle {
-    background-color: #022c68;
-    height: 110px;
-    width: 110px;
-    border-radius: 50%;
-    margin: auto;
-    margin-top: 7%;
-  }
+.team-card-inner .photo-circle {
+  background-color: #022c68;
+  height: 110px;
+  width: 110px;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 7%;
+}
 
-  .team-card-inner .team-member-name {
-    color: #333;
-    padding-top: 5%;
-    text-align: center;
-    font-weight: bold;
-  }
+.team-card-inner .team-member-name {
+  color: #333;
+  padding-top: 5%;
+  text-align: center;
+  font-weight: bold;
+}
 
-  .team-card-inner .team-member-info {
-    color: #333;
-    padding-top: 3%;
-    text-align: center;
-  }
+.team-card-inner .team-member-info {
+  color: #333;
+  padding-top: 3%;
+  text-align: center;
+}
 
-  .team-card:hover .team-card-inner {
-    transform: rotateY(180deg);
-  }
+.team-card:hover .team-card-inner {
+  transform: rotateY(180deg);
+}
 
-  .team-card-front, .team-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
+.team-card-front,
+.team-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
 
 .team-card-back {
   line-height: 30vh;
@@ -439,38 +449,38 @@ img {
   margin-left: 10vh;
 }
 
-  .contact_box #contact_details {
-    color: white;
-    padding-left: 5%;
-    padding-top: 5%;
-    width: 50%;
-    height: 50%;
-    font-size: 1.5em;
-  }
+.contact_box #contact_details {
+  color: white;
+  padding-left: 5%;
+  padding-top: 5%;
+  width: 50%;
+  height: 50%;
+  font-size: 1.5em;
+}
 
-  .contact_box .contact_button {
-    z-index: 20;
-    position: relative;
-    background: white;
-    width: 30vh;
-    height: 7vh;
-    border-radius: 2vh;
-    text-align: center;
-    display: flex;
-    margin: auto;
-    margin-right: 4vh;
-    align-items:center;
-    justify-content:center;
-    font-size: 150%;
-    color: #777;
-  }
+.contact_box .contact_button {
+  z-index: 20;
+  position: relative;
+  background: white;
+  width: 30vh;
+  height: 7vh;
+  border-radius: 2vh;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  margin-right: 4vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 150%;
+  color: #777;
+}
 
-  .contact_button:hover {
-    cursor: pointer;
-    /*color: white;
+.contact_button:hover {
+  cursor: pointer;
+  /*color: white;
     background: #00499c;*/
-    font-weight: 600;
-  }
+  font-weight: 600;
+}
 
 footer {
   margin: auto;
@@ -493,7 +503,7 @@ footer {
 .credits {
   position: relative;
   z-index: 20;
-  background: #EEE;
+  background: #eee;
   opacity: 0.7;
   height: 10vh;
   margin: auto;
@@ -510,17 +520,17 @@ footer {
   font-size: 1em;
 }
 
-  .credit_to a {
-    position: relative;
-    z-index: 20;
-    text-decoration: none;
-    color: black;
-    font-weight: 600;
-  }
+.credit_to a {
+  position: relative;
+  z-index: 20;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
 
-  .credit_to a:hover {
-    font-weight: 800;
-  }
+.credit_to a:hover {
+  font-weight: 800;
+}
 
 hr {
   margin: auto;
@@ -548,16 +558,16 @@ hr {
     margin-top: 5vh;
     margin-left: 6vh;
   }
-    .contact_box #contact_details {
-      color: white;
-      padding-left: 8%;
-      padding-top: 8%;
-      width: 90%;
-      height: 50%;
-      display: flex;
-      justify-content: center;
-      font-size: 1.5em;
-    }
+  .contact_box #contact_details {
+    color: white;
+    padding-left: 8%;
+    padding-top: 8%;
+    width: 90%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+  }
   .team-sect {
     display: block;
   }
@@ -594,9 +604,9 @@ hr {
     font-size: 1.4em;
   }
   .about-us {
-      background: white;
-      margin: inherit;
-      width: auto;
+    background: white;
+    margin: inherit;
+    width: auto;
   }
   .about-us #line {
     display: none;
@@ -617,14 +627,14 @@ hr {
     left: 0;
     margin: auto;
   }
-    .picture-frame img {
-      border-radius: 30px;
-      height: 45vh;
-      width: 80vh;
-      border: 1vw solid #78d6ff;
-      margin: auto;
-    }
-    .picture-frame .about-info {
+  .picture-frame img {
+    border-radius: 30px;
+    height: 45vh;
+    width: 80vh;
+    border: 1vw solid #78d6ff;
+    margin: auto;
+  }
+  .picture-frame .about-info {
     padding-left: 0%;
     padding-right: 0%;
     padding-top: 3%;
@@ -651,11 +661,11 @@ hr {
     margin: inherit;
     width: auto;
   }
-    .about-us .content1 {
-      font-size: 1em;
-      margin: auto;
-      line-height: 1.6;
-    }
+  .about-us .content1 {
+    font-size: 1em;
+    margin: auto;
+    line-height: 1.6;
+  }
   .picture-frame .about-info .title2 {
     font-size: 3.5em;
   }
@@ -681,11 +691,11 @@ hr {
     margin: inherit;
     width: auto;
   }
-    .about-us .content1 {
-      font-size: 1em;
-      margin: auto;
-      line-height: 1.6;
-    }
+  .about-us .content1 {
+    font-size: 1em;
+    margin: auto;
+    line-height: 1.6;
+  }
   .picture-frame .about-info .title2 {
     font-size: 3em;
   }
@@ -717,9 +727,9 @@ hr {
     width: 40vw;
   }
   .about-us {
-      background: white;
-      margin: inherit;
-      width: auto;
+    background: white;
+    margin: inherit;
+    width: auto;
   }
   .picture-frame .about-info .title2 {
     font-size: 2em;
@@ -731,15 +741,15 @@ hr {
   .picture-frame {
     flex-direction: column;
   }
-    .picture-frame img {
-      width: 70vh;
-      height: calc(70vh / 16 * 9);
-    }
-    .picture-frame .about-info {
-      margin-bottom: 30px;
-      width: 80%;
-      height: 25vh;
-    }
+  .picture-frame img {
+    width: 70vh;
+    height: calc(70vh / 16 * 9);
+  }
+  .picture-frame .about-info {
+    margin-bottom: 30px;
+    width: 80%;
+    height: 25vh;
+  }
   .contact_box {
     height: 25vh;
     width: 80vw;
@@ -793,10 +803,10 @@ hr {
   .picture-frame {
     flex-direction: column;
   }
-    .picture-frame img {
-      width: 65vh;
-      height: calc(65vh / 16 * 9);
-    }
+  .picture-frame img {
+    width: 65vh;
+    height: calc(65vh / 16 * 9);
+  }
   .title3 {
     font-size: 3em;
   }
@@ -848,10 +858,10 @@ hr {
     flex-direction: column;
     width: 90%;
   }
-    .picture-frame img {
-      width: 65vh;
-      height: calc(65vh / 16 * 9);
-    }
+  .picture-frame img {
+    width: 65vh;
+    height: calc(65vh / 16 * 9);
+  }
   .title3 {
     font-size: 2.5em;
   }
@@ -885,7 +895,7 @@ hr {
   .scroll-prompt {
     display: block;
   }
-  .team-card-inner .photo-circle {  
+  .team-card-inner .photo-circle {
     height: 80px;
     width: 80px;
   }
