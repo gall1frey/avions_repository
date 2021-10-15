@@ -24,7 +24,7 @@ body, html {
 nav {
   width: 90vw;
   height: 7vh;
-  position: fixed;
+  position: sticky;
   top:0;
   left: 5vw;
   margin: auto;
@@ -344,6 +344,7 @@ img {
   }
 
 .team-card-container {
+  display: flex;
   height: 80vh;
   width: 70vw;
   overflow: auto;
@@ -775,9 +776,7 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
-  nav{
-    position: absolute;
-  }
+
   .txt {
     display: none;
   }
@@ -831,15 +830,29 @@ hr {
   #team {
     padding-top: 20%;
   }
+  .team-card {
+    min-width: 10%;
+  }
+  .team-card-inner {
+    width: 100%;
+    height: 100%;
+    background: #eaeaea;
+    border-radius: 1vh;
+    z-index: 20;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  .team-card-container{
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
   #contact {
     padding-top: 40%;
   }
   .contact_box{
     margin: auto;
     margin-top: 10px;
-  }
-  .team-card {
-    min-width: 0;
   }
   .footer-stuff{
     padding-top: 20px;
