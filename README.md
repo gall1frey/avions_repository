@@ -19,7 +19,7 @@ The club fosters a certain work ethic by means of participating in numerous comp
   4. In your wrb browser, go to localhost:8000
 
 ## Is this beginner Friendly?
-Yep! 
+Yep! We welcome all beginners who are interested in contributing their best efforts towards making this repository more accessible and easy-to-understand!
 
 ## What if I face a problem?
 The first step is to always google stuff. Try different searches and keywords, look through stackoverflow.
