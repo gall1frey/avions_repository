@@ -12,6 +12,15 @@ body, html {
     display: none;
 }
 
+.left-center {
+  text-align: left;
+  padding-left: 10%;
+}
+
+.airplane_texture {
+  height: 700px;
+  width: 700px;
+}
 /** {
    outline: 1px solid red;
   }
