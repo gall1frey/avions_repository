@@ -16,7 +16,7 @@ The club fosters a certain work ethic by means of participating in numerous comp
   1. Make sure you have an installation of python
   2. Navigate to the directory where this repository is cloned
   3. Execute the command ```python3 -m http.server```
-  4. In your wrb browser, go to localhost::
+  4. In your wrb browser, go to localhost:8000
 
 ## Is this beginner Friendly?
 Yep! 
