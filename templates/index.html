@@ -54,7 +54,9 @@
         <div class="title4">What We Do</div>
         <div class="do-content">
           <div class="content1" style="padding: 7%; font-size: 1.3em" id="what_we_do">
-            {{data['whatWeDo']}}
+            {% for para in text %}
+                <p>{{para}}</p>
+            {% endfor %}
           </div>
         </div>
       </div>
@@ -99,7 +101,9 @@
             <div class="team-card">
               <div class="team-card-inner">
                 <div class="team-card-front">
-                  <div class="photo-circle"></div>
+                  <div class="photo-circle">
+                    <img src="{{url_for('static',filename='assets/team/'+data['team'][n]['imageName'])}}"/>
+                  </div>
                   <div class="team-member-name">{{data['team'][n]['name']}}</div>
                   <div class="team-member-info">{{data['team'][n]['position']}}</div>
                 </div>

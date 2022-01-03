@@ -20,6 +20,23 @@
         "Linkedin":"Linkedin",
         "Instagram":"Instagram",
         "Web":"Web",
+        "tagline":"caption",
+        "imageName":"asd.jpg"
+      },{
+        "name":"Person1",
+        "position":"Captain",
+        "Linkedin":"Linkedin",
+        "Instagram":"Instagram",
+        "Web":"Web",
+        "tagline":"caption",
+        "imageName":"asd.jpg"
+      },{
+        "name":"Person1",
+        "position":"Captain",
+        "Linkedin":"Linkedin",
+        "Instagram":"Instagram",
+        "Web":"Web",
+        "imageName":"asd.jpg",
         "tagline":"caption"
       },{
         "name":"Person1",
@@ -27,48 +44,39 @@
         "Linkedin":"Linkedin",
         "Instagram":"Instagram",
         "Web":"Web",
-        "tagline":"caption"
+        "tagline":"caption",
+        "imageName":"asd.jpg"
       },{
-        "name":"Person1",
-        "position":"Captain",
-        "Linkedin":"Linkedin",
-        "Instagram":"Instagram",
-        "Web":"Web",
-        "tagline":"caption"
-      },{
-        "name":"Person1",
-        "position":"Captain",
-        "Linkedin":"Linkedin",
-        "Instagram":"Instagram",
-        "Web":"Web",
-        "tagline":"caption"
-      },{
-        "name":"Person1",
-        "position":"Captain",
-        "Linkedin":"Linkedin",
-        "Instagram":"Instagram",
-        "Web":"Web",
-        "tagline":"caption"
-      },{
-        "name":"Person1",
-        "position":"Captain",
-        "Linkedin":"Linkedin",
-        "Instagram":"Instagram",
-        "Web":"Web",
-        "tagline":"caption"
-      },{
-        "name":"Person1",
-        "position":"Captain",
-        "Linkedin":"Linkedin",
-        "Instagram":"Instagram",
-        "Web":"Web",
-        "tagline":"caption"
-      },{
-        "name":"Person1",
-        "position":"Captain",
-        "Linkedin":"Linkedin",
-        "Instagram":"Instagram",
-        "Web":"Web",
-        "tagline":"caption"
-      }]
+          "name":"Person1",
+          "position":"Captain",
+          "Linkedin":"Linkedin",
+          "Instagram":"Instagram",
+          "Web":"Web",
+          "tagline":"caption",
+          "imageName":"def.jpg"
+        },{
+          "name":"Person1",
+          "position":"Captain",
+          "Linkedin":"Linkedin",
+          "Instagram":"Instagram",
+          "Web":"Web",
+          "tagline":"caption",
+          "imageName":"asd.jpg"
+        },{
+          "name":"Person1",
+          "position":"Captain",
+          "Linkedin":"Linkedin",
+          "Instagram":"Instagram",
+          "Web":"Web",
+          "imageName":"asd.jpg",
+          "tagline":"caption"
+        },{
+          "name":"Person1",
+          "position":"Captain",
+          "Linkedin":"Linkedin",
+          "Instagram":"Instagram",
+          "Web":"Web",
+          "tagline":"caption",
+          "imageName":"def.jpg"
+        }]
   }

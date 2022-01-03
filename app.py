@@ -9,6 +9,7 @@ CORS(app)
 def hello():
     with open('data/data.json','r') as f:
         data = json.loads(f.read())
+        text = data['whatWeDo'].split('\n')
     return render_template('index.html',**locals())
 
 @app.route("/assets/Airplane.obj",methods=['GET'])
