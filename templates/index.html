@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVIONS</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/stylesheet.css')}}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  </head>
+  <body>
+    <div class="content">
+      <div class="loading"></div>
+      <div id="home"></div>
+      <nav>
+          <a href="#home" class="nav-buttons txt"><div>Home</div></a>
+          <a href="#home" class="nav-buttons ico"><div><span class="material-icons-round">home</span></div></a>
+          <a href="#about" class="nav-buttons txt"><div>About Us</div></a>
+          <a href="#about" class="nav-buttons ico"><div><span class="material-icons-round">info</span></div></a>
+          <a href="#what-we-do" class="nav-buttons ico"><div><span class="material-icons-round">collections</span></div></a>
+          <a href="#what-we-do" class="nav-buttons txt"><div>What We Do</div></a>
+          <a href="#achievements" class="nav-buttons txt"><div>Achievements</div></a>
+          <a href="#achievements" class="nav-buttons ico"><div><span class="material-icons-round">emoji_events</span></div></a>
+          <a href="#upcoming" class="nav-buttons txt"><div>Upcoming</div></a>
+          <a href="#upcoming" class="nav-buttons ico"><div><span class="material-icons-round">event</span></div></a>
+          <a href="#team" class="nav-buttons txt"><div>Team</div></a>
+          <a href="#team" class="nav-buttons ico"><div><span class="material-icons-round">groups</span></div></a>
+          <a href="#contact" class="nav-buttons txt"><div>Contact Us</div></a>
+          <a href="#contact" class="nav-buttons ico"><div><span class="material-icons-round">call</span></div></a>
+      </nav>
+      <div class="sect" id="home">
+        <div class="home"></div>
+        <div class="avions-logo">
+          <img src="assets/avions_logo.png" alt=""/>
+          <div class="title1 center">A V I O N S</div>
+          <p class="subtitle center" id="subtitle"></p>
+        </div>
+        <div class="scroll-cta"></div>
+      </div>
+      <div class="sect"id="about">
+        <div class="about-us">
+          <div id="line"></div>
+          <div class="picture-frame">
+            <div class="about-info">
+              <div class="title2" style="padding-left: 5%">About Us.</div>
+              <div class="content1" style="padding: 2%" id="about_text">{{data['aboutUsText']}}</div>
+            </div>
+            <img src="{{url_for('static',filename='assets/team.jpg')}}" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="sect team-sect" id="what-we-do">
+        <div class="title4">What We Do</div>
+        <div class="do-content">
+          <div class="content1" style="padding: 7%; font-size: 1.3em" id="what_we_do">
+            {{data['whatWeDo']}}
+          </div>
+        </div>
+      </div>
+      <div class="sect blue" id="achievements">
+        <div class="achievements"></div>
+        <h1 class="title2 left">Achievements</h1>
+        <div class="content1 left" id="achievements-text">{{data['achievementsText']}}</div>
+        <div class="card-container blue" id="achievement_cards">
+          {% for card in data['achievement_cards'] %}
+            <div class="card">
+              <div class="card-title">
+                {{card['title']}}
+              </div>
+              <div class="card-text content1">
+                {{card['details']}}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="scroll-prompt prompt-side">Scroll &rarr;</div>
+      </div>
+      <div class="sect" id="upcoming">
+        <div class="title3 center">Upcoming Events</div>
+        <div class="upcoming" id="upcoming_list">
+          {% if data['upcoming_list'] |length ==0 %}
+          <div class="li">Nothing here as of now. Check back later!</div>
+          {% else %}
+           {% for upcoming in data['upcoming_list'] %}
+            <div class="li">{{upcoming}}</div>
+           {% endfor %}
+          {% endif %}
+        </div>
+        <div class="scroll-prompt prompt-down">Scroll &darr;</div>
+      </div>
+      <div class="sect team-sect" id="team">
+        <div class="title4">Meet the Team</div>
+        <ul class="team-card-container" id="team_list">
+          {% for n in range(data['team']| length) %}
+            {% if n%5 == 0 or n%5 == 2 %}
+              <li class="team-card-li">
+            {% endif %}
+            <div class="team-card">
+              <div class="team-card-inner">
+                <div class="team-card-front">
+                  <div class="photo-circle"></div>
+                  <div class="team-member-name">{{data['team'][n]['name']}}</div>
+                  <div class="team-member-info">{{data['team'][n]['position']}}</div>
+                </div>
+                <div class="team-card-back">
+                  <div class="team-member-info">{{data['team'][n]['tagline']}}</div>
+                </div>
+              </div>
+            </div>
+            {% if n%5 == 1 or n%5 == 4 %}
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="sect" id="contact" style="height:60vh">
+        <div class="contact-us">
+          <div class="title2 left">Contact Us</div>
+          <div class="contact_box">
+            <div id="contact_details">{{data['contact_details'][0]}}</div>
+            <a style="text-decoration: none" class="contact_button_a" href="{{data['contact_details'][1]}}" target="_blank"><div class="contact_button" id="contact_button">Register Here</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div><hr></div>
+      <div class="footer-stuff">
+        <div class="footer-content">
+          <a href="/gallery">Gallery</a>
+        </div>
+        <div class="footer-content">
+          <a href="/">Home</a>
+        </div>
+      </div>
+      <div class="credit_to" style="text-align:center">Credits</div>
+      <div><hr style="width:10vw"></div>
+      <div class="credits">
+        <div class="credit_to">
+          <a target="_blank" href="#">Designer</a>
+        </div>
+        <div class="credit_to">
+          <a target="_blank" href="#">Plane Model</a>
+        </div>
+        <div class="credit_to">
+          <a target="_blank" href="#">Designer</a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.2/ScrollTrigger.min.js"></script>
+    <script src="{{ url_for('static',filename='js/three.min.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/OBJLoader.js')}}"></script>
+    <script src="{{ url_for('static',filename='js/animation_script.js')}}"></script>
+    <!--script type="text/javascript" src="data/data.json"></script>
+    <script src="js/load_data_script.js"></script-->
+  </body>
+</html>

@@ -164,6 +164,10 @@ img {
   padding-right: 3%;
   width: 40vw;
   height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 .content1 {
@@ -487,7 +491,13 @@ footer {
   position: relative;
   z-index: 20;
   height: 40vh;
+  width: 100%;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: row;
+  text-align: center;
 }
 
 .credits {
@@ -525,6 +535,69 @@ footer {
 hr {
   margin: auto;
   max-width: 60vw;
+}
+
+.gallery_container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 400px 400px;
+  grid-gap: 10px;
+  grid-auto-flow: dense;
+  margin: 100px;
+}
+.gallery-item{
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.gallery-item .image{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.gallery-item .image img{
+  /*width: 100%;*/
+  border-radius: 16px;
+  /*height: 100%;*/
+  object-fit: cover;
+  object-position: 50% 50%;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+.gallery-item:hover .image img{
+  transform: scale(1.25);
+}
+
+.do-content {
+  background: #1b85fe;
+  border-radius: 20%;
+  height: 70%;
+  margin-left: 5%;
+  margin-top: 2%;
+  width: 40vw;
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content {
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content a {
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1470px) {
@@ -667,6 +740,11 @@ hr {
     height: 50%;
     font-size: 1.2em;
   }
+  .do-content {
+    width: 60vw;
+    margin: auto;
+    border-radius: 25%;
+  }
 }
 
 @media screen and (max-width: 1070px) {
@@ -704,6 +782,10 @@ hr {
     width: 70%;
     height: 50%;
     font-size: 1.2em;
+  }
+  .do-content {
+    width: auto;
+    margin: auto;
   }
 }
 
@@ -885,42 +967,8 @@ hr {
   .scroll-prompt {
     display: block;
   }
-  .team-card-inner .photo-circle {  
+  .team-card-inner .photo-circle {
     height: 80px;
     width: 80px;
   }
-}
-
-.gallery_container{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-auto-rows: 400px 400px;
-  grid-gap: 10px;
-  grid-auto-flow: dense;
-  margin: 100px;
-}
-.gallery-item{
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.gallery-item .image{
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.gallery-item .image img{
-  width: 100%;
-  border-radius: 16px;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 50%;
-  cursor: pointer;
-  transition: .5s ease-in-out;
-}
-
-.gallery-item:hover .image img{
-  transform: scale(1.25);
 }

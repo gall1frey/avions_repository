@@ -61,3 +61,5 @@ if (team_members.length > 0){
   }
 }
 document.getElementById('team_list').innerHTML = text;
+
+document.getElementById('what_we_do').innerHTML = mydata.whatWeDo;
